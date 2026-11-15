@@ -1,0 +1,2 @@
+# Copy to .dev.vars (gitignored) for local `wrangler dev` only.
+DEV_SKIP_ACCESS=1

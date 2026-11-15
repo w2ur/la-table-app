@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // The static demo (npm run build:demo): an assets-only Worker, no code, no D1, no variables, no Access, deployed by
+  // its own Workers Builds entry with `npm run deploy:demo` and by nothing else. It is never the app: the app's one
+  // deploy path is `npm run deploy:ci` on wrangler.jsonc. scripts/deploy-demo.ts, run first by deploy:demo, holds the keys below
+  // to an allowlist and refuses the deploy otherwise, so a binding or a route cannot be published.
+  "name": "la-table-demo",
+  // The same account as the app (wrangler.jsonc), not a secret; named so no shell variable or cache can pick another.
+  "account_id": "44513f9fd94c38330fc5ca98603adf15",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist-demo"
+  }
+}

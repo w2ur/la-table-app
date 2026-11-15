@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TABLE>
+   <ALIM>
+      <alim_code> 20039 </alim_code>
+      <alim_nom_fr> Poireau, cru </alim_nom_fr>
+      <alim_nom_sci missing=" " />
+   </ALIM>
+   <ALIM>
+      <alim_code> 20585 </alim_code>
+      <alim_nom_fr> Lentille verte, sèche </alim_nom_fr>
+      <alim_nom_sci missing=" " />
+   </ALIM>
+   <ALIM>
+      <alim_code> 22000 </alim_code>
+      <alim_nom_fr> Oeuf, cru </alim_nom_fr>
+      <alim_nom_sci missing=" " />
+   </ALIM>
+   <ALIM>
+      <alim_code> 9001 </alim_code>
+      <alim_nom_fr> Crème d&apos;été &lt;test&gt; &amp; &quot;co&quot; </alim_nom_fr>
+      <alim_nom_sci missing=" " />
+   </ALIM>
+   <ALIM>
+      <alim_code> 9002 </alim_code>
+      <alim_nom_fr> Sans énergie </alim_nom_fr>
+      <alim_nom_sci missing=" " />
+   </ALIM>
+   <ALIM>
+      <alim_code> 9003 </alim_code>
+      <alim_nom_fr> Alien </alim_nom_fr>
+      <alim_nom_sci missing=" " />
+   </ALIM>
+</TABLE>

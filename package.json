@@ -1,0 +1,54 @@
+{
+  "name": "la-table",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite build && wrangler dev",
+    "build": "vite build",
+    "build:demo": "vite build --mode demo",
+    "seed:sql": "node scripts/gen-seed-sql.ts",
+    "backup": "node scripts/backup.ts",
+    "restore-drill": "tsx scripts/restore-drill.ts",
+    "plan": "tsx src/cli/plan.ts",
+    "ciqual": "tsx scripts/ciqual.ts",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.worker.json && tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.sw.json && tsc --noEmit -p tsconfig.e2e.json && tsc --noEmit -p probes/d1-limit/tsconfig.json",
+    "deploy": "npm run deploy:ci",
+    "build:ci": "npm run typecheck && npm test && npm run build",
+    "deploy:ci": "tsx scripts/deploy-ci.ts",
+    "deploy:demo": "tsx scripts/deploy-demo.ts && npm run build:demo && wrangler deploy --config wrangler.demo.jsonc --env-file=/dev/null",
+    "probe:live": "tsx scripts/probe-live.ts",
+    "probe:burst": "tsx scripts/probe-burst.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "jose": "^6.2.12",
+    "preact": "^11.0.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.0.0",
+    "@cloudflare/workers-types": "^5.20261010.1",
+    "@playwright/test": "1.63.0",
+    "@preact/preset-vite": "^2.10.6",
+    "@types/node": "^26.6.5",
+    "fake-indexeddb": "^6.2.5",
+    "fast-check": "^4.10.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "~4.1.11",
+    "wrangler": "^4.149.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261006.1": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20260815.1": true,
+    "fsevents@2.3.3": true
+  }
+}

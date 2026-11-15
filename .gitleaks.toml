@@ -1,0 +1,13 @@
+title = "la-table gitleaks config"
+
+[extend]
+useDefault = true
+
+# wrangler.jsonc publishes the Access application's AUD tag on purpose: it is inside every JWT a
+# browser receives and the Worker only compares it, so it protects nothing. The default generic-api-key rule flags it,
+# so it is allowlisted by exact value rather than by path: any other 64-hex value in that file, or a real key added
+# elsewhere, is still reported. A deployer of their own copy replaces this value with their application's AUD
+# (SELF-HOSTING.md).
+[[allowlists]]
+description = "Access AUD tag in wrangler.jsonc"
+regexes = ['''6e02bad1e8d730288705b85a6ff3c01332f1b51685e9ead3064971c7634cb7c3''']

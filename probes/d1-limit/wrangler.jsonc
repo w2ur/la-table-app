@@ -1,0 +1,15 @@
+{
+  // A one-off measurement copies this file to the scratchpad with the scratch database's id and an absolute `main`, deploys
+  // it, measures, then deletes the Worker and the database. Never deployed from here, never bound to la-table.
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "la-table-d1-probe",
+  // the app's account, as in wrangler.jsonc: wrangler reads it before CLOUDFLARE_ACCOUNT_ID, a .env or its account cache
+  "account_id": "44513f9fd94c38330fc5ca98603adf15",
+  "main": "worker.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "d1_databases": [
+    { "binding": "DB", "database_name": "la-table-d1-probe", "database_id": "00000000-0000-0000-0000-000000000000" }
+  ]
+}

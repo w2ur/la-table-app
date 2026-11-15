@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "types": ["@cloudflare/workers-types", "@cloudflare/vitest-plugin/types"]
+  },
+  "include": ["src/worker", "src/domain", "src/cli/client.ts", "src/cli/client.workers.test.ts", "test"],
+  "exclude": ["src/worker/schema.test.ts", "src/worker/config.test.ts"]
+}

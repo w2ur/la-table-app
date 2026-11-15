@@ -1,0 +1,44 @@
+# Claude Code
+.claude/agent-memory/
+.claude/agent-memory-local/
+.claude/worktrees/
+.claude/settings.local.json
+
+# dependencies
+node_modules/
+
+# build
+dist/
+dist-demo/
+.wrangler/
+
+# testing
+coverage/
+test-results/
+playwright-report/
+blob-report/
+
+# env and secrets
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+
+# data exports
+*.sqlite
+*.sqlite3
+*.db
+exports/
+backups/
+
+# plans never live in the repo
+docs/plans/
+proposal*.json
+*.envois.json
+
+# misc
+.DS_Store
+*.log
+
+# downloaded Ciqual tables (npm run ciqual)
+data/ciqual/

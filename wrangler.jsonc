@@ -1,0 +1,37 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "la-table",
+  // The owner's account, not a secret (useless without a token): wrangler reads it before CLOUDFLARE_ACCOUNT_ID or its
+  // account cache, so no shell, .env or cached file can send the migrations or the deploy to another account.
+  "account_id": "44513f9fd94c38330fc5ca98603adf15",
+  "main": "src/worker/index.ts",
+  // Named, so wrangler hands it to esbuild instead of looking for a tsconfig.json above the Worker's sources, which a
+  // directory outside the commit could hold (scripts/deploy-config.ts refuses a deploy without it).
+  "tsconfig": "./tsconfig.worker.json",
+  "compatibility_date": "2026-10-01",
+  // The app is served on its workers.dev address only, behind Cloudflare Access (Worker-level, so previews too), and no
+  // per-version preview URL is created (scripts/deploy-config.ts refuses a deploy without both set explicitly).
+  "workers_dev": true,
+  "preview_urls": false,
+  // GET /api/health answers this Worker version's id and tag (the deployed commit), which the live probe waits for.
+  "version_metadata": { "binding": "CF_VERSION_METADATA" },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "la-table",
+      "database_id": "ca55d47f-86a2-40a0-bc1d-a07715071804",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // From the Access application that protects the Worker. Not secrets: the team domain is the public login page and
+  // the AUD tag is inside every JWT a browser receives; the Worker only compares them.
+  "vars": {
+    "ACCESS_TEAM_DOMAIN": "william-445.cloudflareaccess.com",
+    "ACCESS_AUD": "6e02bad1e8d730288705b85a6ff3c01332f1b51685e9ead3064971c7634cb7c3"
+  }
+}

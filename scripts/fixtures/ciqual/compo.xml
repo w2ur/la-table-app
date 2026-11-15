@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TABLE>
+   <COMPO>
+      <alim_code> 20039 </alim_code>
+      <const_code> 327 </const_code>
+      <teneur> 127 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20039 </alim_code>
+      <const_code> 328 </const_code>
+      <teneur> 30,4 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20039 </alim_code>
+      <const_code> 25000 </const_code>
+      <teneur> 1,5 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20039 </alim_code>
+      <const_code> 31000 </const_code>
+      <teneur> 4,55 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20039 </alim_code>
+      <const_code> 40000 </const_code>
+      <teneur> 0,3 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20039 </alim_code>
+      <const_code> 34100 </const_code>
+      <teneur> 1,8 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20039 </alim_code>
+      <const_code> 10004 </const_code>
+      <teneur> 0,05 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20585 </alim_code>
+      <const_code> 327 </const_code>
+      <teneur> 1380 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20585 </alim_code>
+      <const_code> 328 </const_code>
+      <teneur> 327 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20585 </alim_code>
+      <const_code> 25000 </const_code>
+      <teneur> 25,1 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20585 </alim_code>
+      <const_code> 31000 </const_code>
+      <teneur> 44,5 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20585 </alim_code>
+      <const_code> 40000 </const_code>
+      <teneur> 1,8 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20585 </alim_code>
+      <const_code> 34100 </const_code>
+      <teneur> 16,4 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 20585 </alim_code>
+      <const_code> 10004 </const_code>
+      <teneur> &lt; 0,13 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 22000 </alim_code>
+      <const_code> 328 </const_code>
+      <teneur> 140 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 22000 </alim_code>
+      <const_code> 25000 </const_code>
+      <teneur> 12,8 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 22000 </alim_code>
+      <const_code> 31000 </const_code>
+      <teneur> 0,06 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 22000 </alim_code>
+      <const_code> 40000 </const_code>
+      <teneur> 9,83 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 22000 </alim_code>
+      <const_code> 34100 </const_code>
+      <teneur> 0 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 22000 </alim_code>
+      <const_code> 10004 </const_code>
+      <teneur> 0,31 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9001 </alim_code>
+      <const_code> 328 </const_code>
+      <teneur> 52 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9001 </alim_code>
+      <const_code> 25000 </const_code>
+      <teneur> traces </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9001 </alim_code>
+      <const_code> 31000 </const_code>
+      <teneur> &lt; 0,5 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9001 </alim_code>
+      <const_code> 40000 </const_code>
+      <teneur> 2 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9001 </alim_code>
+      <const_code> 34100 </const_code>
+      <teneur> - </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9001 </alim_code>
+      <const_code> 10004 </const_code>
+      <teneur> traces </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9002 </alim_code>
+      <const_code> 328 </const_code>
+      <teneur> - </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9002 </alim_code>
+      <const_code> 25000 </const_code>
+      <teneur> 1 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9002 </alim_code>
+      <const_code> 31000 </const_code>
+      <teneur> 1 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9002 </alim_code>
+      <const_code> 40000 </const_code>
+      <teneur> 1 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9002 </alim_code>
+      <const_code> 34100 </const_code>
+      <teneur> 1 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9002 </alim_code>
+      <const_code> 10004 </const_code>
+      <teneur> 1 </teneur>
+      <min missing=" " />
+   </COMPO>
+   <COMPO>
+      <alim_code> 9003 </alim_code>
+      <const_code> 328 </const_code>
+      <teneur> 999 </teneur>
+      <min missing=" " />
+   </COMPO>
+</TABLE>

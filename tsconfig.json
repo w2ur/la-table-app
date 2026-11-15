@@ -1,0 +1,7 @@
+{
+  // Not a project (npm run typecheck runs the tsconfig.*.json files): the file esbuild and Vite stop at when they look
+  // for a tsconfig.json above a source file, so none above the repository or an export of it is ever read
+  // (scripts/build-isolation.test.ts). It includes every file and sets the base options only, which change no byte of
+  // either build: keep it so.
+  "extends": "./tsconfig.base.json"
+}
